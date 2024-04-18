@@ -27,9 +27,13 @@ body {
     color: white;
   }
 
-  /* ----- Letter spacing for headers */
+  /* ----- Letter spacing for headers and paragraphs */
   .header-spacing {
     letter-spacing: 4px;
+  }
+
+  .para-spacing {
+    letter-spacing: 2px;
   }
   /* ----- Animations for mobile menu slide in */
   .mobile-menu-animation {

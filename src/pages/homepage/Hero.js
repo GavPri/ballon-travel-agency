@@ -20,7 +20,7 @@ const Hero = () => {
           of a lif<span className="stand-out">e</span>
           time
         </h2>
-        <p className="text-center p-6 text-white font-Fig max-w-readable md:text-xl hidden md:flex">
+        <p className="para-spacing text-center p-6 text-white font-Fig max-w-readable md:text-xl hidden md:flex">
           Embark on unforgettable journeys with us! Explore exotic destinations,
           savor local cuisine, and create lasting memories. From breathtaking
           landscapes to vibrant cities. Your adventure starts here!
