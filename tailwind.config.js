@@ -15,6 +15,9 @@ module.exports = {
         M: ["Merienda", "sans-serif"],
         Fig: ["Figtree", "sans-serif"],
       },
+      maxWidth: {
+        readable: "65ch",
+      },
     },
   },
   plugins: [],
