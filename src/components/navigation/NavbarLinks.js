@@ -2,7 +2,7 @@ import React from "react";
 
 const NavbarLinks = () => {
   return (
-    <ul className="text-white flex text-xl font-Fig mt-4">
+    <ul className="text-white md:flex text-xl font-Fig mt-4 hidden">
       <li className="mr-6 list-items-hover">Home</li>
       <li className="mr-6 list-items-hover">About</li>
       <li className="mr-6 list-items-hover">Flights</li>

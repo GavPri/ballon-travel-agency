@@ -7,7 +7,7 @@ import {
 
 const SocialMediaLinks = () => {
   return (
-    <div className="flex text-white items-center">
+    <div className="hidden md:flex text-white items-center">
       <p className="font-Fig text-sm">Follow Us :</p>
       <ul className="flex text">
         <li className="mx-2 list-items-hover">
