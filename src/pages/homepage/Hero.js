@@ -9,6 +9,7 @@ const Hero = () => {
         imageUrl={hero}
         height={800}
         className={`rounded-lg absolute`}
+        backgroundPosition={`top, center`}
       />
       <div className="z-10 ">
         <h2 className="font-M text-yellow text-5xl uppercase text-center">
