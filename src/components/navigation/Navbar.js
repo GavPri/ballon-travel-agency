@@ -30,9 +30,6 @@ const Navbar = () => {
       {/* ----- Social media links */}
       <div>
         <p className="font-Fig text-grey">Follow Us :</p>
-        <li></li>
-        <li></li>
-        <li></li>
       </div>
     </nav>
   );
