@@ -26,4 +26,20 @@ body {
     font-style: italic;
     color: white;
   }
+  /* ----- Animations for mobile menu slide in */
+  .mobile-menu-animation {
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+
+  .mobile-menu-animation.open {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .mobile-menu-animation.close {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 }

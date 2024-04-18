@@ -64,11 +64,9 @@ const Navbar = () => {
         </nav>
       </div>
       <ul
-        className={
-          mobileMenu
-            ? "absolute top-16 right-0 w-[100vw] h-[90vh] bg-dark text-white z-50 flex flex-col justify-center items-center opacity-100 transform translate-x-0 transition-all duration-500 ease-in"
-            : "absolute top-16 right-full w-[100vw] h-[90vh] bg-dark text-white z-50 flex flex-col justify-center items-center opacity-0 transform translate-x-full transition-all duration-500 ease-in"
-        }
+        className={`absolute top-16 right-0 w-[100vw] h-[90vh] bg-dark text-white z-50 flex flex-col justify-center items-center mobile-menu-animation ${
+          mobileMenu ? "open" : "close"
+        }`}
       >
         <li className="list-items-hover mb-4 text-2xl">Home</li>
         <li className="list-items-hover mb-4 text-2xl">About</li>
