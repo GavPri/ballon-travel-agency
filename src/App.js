@@ -1,7 +1,9 @@
+import Navbar from "./components/navigation/Navbar";
+
 function App() {
   return (
     <div>
-      <h1>Ballon Travel</h1>
+      <Navbar />
     </div>
   );
 }
