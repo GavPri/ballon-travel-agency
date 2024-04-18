@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 
 const Hero = () => {
   return (
-    <div className="md:max-w-[1240px] w-screen mx-2 m-auto h-[800px] relative mt-4 flex justify-center md:items-center items-start">
+    <div className="md:max-w-[1240px] w-[90vw] m-auto h-[800px] relative mt-4 flex justify-center md:items-center items-start">
       <BackgroundImage
         imageUrl={hero}
         height={800}
