@@ -4,7 +4,7 @@ import BackgroundImage from "../../components/BackgroundImage";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1240px] m-auto h-[800px] relative mt-24">
+    <div className="max-w-[1240px] m-auto h-[800px] relative mt-4">
       <BackgroundImage
         imageUrl={hero}
         height={800}

@@ -5,15 +5,19 @@
 /* ----- Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Merienda:wght@300..900&display=swap");
 
-/* ----- layer utilities */
-@layer utilities{
-    /* ----- Hover effects for navbar list items */
-    .list-items-hover{
-        cursor: pointer;
-        transition: all 500ms ease-in-out;
-    }
+body {
+  background-color: #07130d;
+}
 
-    .list-items-hover:hover{
-        color: #ffd600;
-    }
+/* ----- layer utilities */
+@layer utilities {
+  /* ----- Hover effects for navbar list items */
+  .list-items-hover {
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+  }
+
+  .list-items-hover:hover {
+    color: #ffd600;
+  }
 }

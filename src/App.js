@@ -3,9 +3,11 @@ import Hero from "../src/pages/homepage/Hero";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
+    <div className="bg-dark min-h-screen">
+      <div className="max-w-[1240px] m-auto">
+        <Navbar />
+        <Hero />
+      </div>
     </div>
   );
 }

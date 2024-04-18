@@ -8,6 +8,7 @@ module.exports = {
       yellow: "#ffd600",
       white: "#f7f2e6",
       grey: "#b1b1b1",
+      transparent: "rgba(7, 19, 13, 0)",
     },
     extend: {
       fontFamily: {
