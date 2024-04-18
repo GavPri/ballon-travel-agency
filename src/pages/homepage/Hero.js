@@ -1,8 +1,12 @@
 import React from "react";
-import hero from "../../images/hero.jpg";
+import BackgroundImage from "../../components/BackgroundImage";
 
 const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <div className="h-[70vh] w-screen">
+      <BackgroundImage imageUrl="../../images/hero.jpg" />
+    </div>
+  );
 };
 
 export default Hero;
