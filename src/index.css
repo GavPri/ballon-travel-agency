@@ -26,6 +26,11 @@ body {
     font-style: italic;
     color: white;
   }
+
+  /* ----- Letter spacing for headers */
+  .header-spacing {
+    letter-spacing: 4px;
+  }
   /* ----- Animations for mobile menu slide in */
   .mobile-menu-animation {
     transition-property: opacity, width;
@@ -36,12 +41,10 @@ body {
   .mobile-menu-animation.open {
     opacity: 1;
     width: 100vw;
-
   }
 
   .mobile-menu-animation.close {
     opacity: 0;
     width: 0vw;
-
   }
 }

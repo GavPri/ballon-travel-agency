@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundPosition={`top, center`}
       />
       <div className="z-10 text-center flex flex-col justify-center items-center mt-24">
-        <h2 className="font-M text-yellow md:text-7xl text-xl uppercase ">
+        <h2 className=" header-spacing font-M text-yellow md:text-7xl text-xl uppercase ">
           Emb<span className="stand-out">a</span>rk on a journe
           <span className="stand-out">
             y<br></br>
