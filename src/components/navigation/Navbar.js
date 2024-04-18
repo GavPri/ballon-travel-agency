@@ -12,6 +12,12 @@ const Navbar = () => {
       <NavbarLinks />
       {/* ----- Social media links */}
       <SocialMediaLinks />
+      {/* ----- hamburger menu */}
+      <div className="ml-auto flex flex-col justify-between items-center w-6 aspect-square">
+        <span className="bg-yellow w-full h-1 rounded-full"></span>
+        <span className="bg-yellow w-full h-1 rounded-full"></span>
+        <span className="bg-yellow w-full h-1 rounded-full"></span>
+      </div>
     </nav>
   );
 };
