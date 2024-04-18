@@ -63,13 +63,13 @@ const Navbar = () => {
           {/* ----- Side Bar NavList */}
         </nav>
       </div>
-      <ul className="absolute top-16 w-[100vw] h-[100vh] bg-dark text-white z-50">
-        <li>Home</li>
-        <li>About</li>
-        <li>Flights</li>
-        <li>Destinations</li>
-        <li>Blogs</li>
-        <li>Contact</li>
+      <ul className="absolute top-16 w-[100vw] h-[90vh] bg-dark text-white z-50 flex flex-col justify-center items-center">
+        <li className="list-items-hover mb-4 text-2xl">Home</li>
+        <li className="list-items-hover mb-4 text-2xl">About</li>
+        <li className="list-items-hover mb-4 text-2xl">Flights</li>
+        <li className="list-items-hover mb-4 text-2xl">Destinations</li>
+        <li className="list-items-hover mb-4 text-2xl">Blogs</li>
+        <li className="list-items-hover mb-4 text-2xl">Contact</li>
       </ul>
     </div>
   );
