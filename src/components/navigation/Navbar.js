@@ -5,6 +5,7 @@ import {
   AiFillInstagram,
   AiFillTwitterSquare,
 } from "react-icons/ai";
+import NavbarLinks from "./NavbarLinks";
 
 const Navbar = () => {
   return (
@@ -12,14 +13,7 @@ const Navbar = () => {
       {/* ----- Logo */}
       <Logo width={100} height={100} />
       {/* ----- Nav links / unordered list */}
-      <ul className="text-grey flex  font-Fig">
-        <li className="mr-6 list-items-hover">Home</li>
-        <li className="mr-6 list-items-hover">About</li>
-        <li className="mr-6 list-items-hover">Flights</li>
-        <li className="mr-6 list-items-hover">Destination</li>
-        <li className="mr-6 list-items-hover">Blogs</li>
-        <li className="list-items-hover">Contact</li>
-      </ul>
+      <NavbarLinks />
       {/* ----- Social media links */}
       <div className="flex text-white items-center">
         <p className="font-Fig text-sm">Follow Us :</p>
