@@ -1,5 +1,4 @@
 import React from "react";
-import SocialMediaLinks from "./SocialMediaLinks";
 
 const MobileNavLinks = ({ mobileMenu }) => {
   return (
