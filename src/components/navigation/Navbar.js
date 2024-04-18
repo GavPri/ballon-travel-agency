@@ -15,7 +15,11 @@ const Navbar = () => {
     <div className="w-screen md:max-w-[1240px]">
       {/* ----Navigation Wrapper */}
       <div className="flex justify-center items-center ">
-        <nav className="w-[80vw] md:max-w-[1240px] h-24 bg-transparent z-10 m-0 flex items-center justify-between absolute top-0 ">
+        <nav
+          className={`w-full px-10 md:max-w-[1240px] h-16 z-10 m-0 flex items-center justify-between absolute top-0 transition-all duration-500 ${
+            mobileMenu ? `bg-dark` : `bg-transparent`
+          }`}
+        >
           {/* ----- Logo */}
           <Logo width={100} height={100} />
           {/* ----- Nav links / unordered list */}
