@@ -1,0 +1,22 @@
+{
+  "company_info": {
+    "missions_and_stats": {
+      "our_airline_flies_greener": {
+        "heading": "Our Airline Flies Greener",
+        "description": "At XYZ Airlines, we're committed to sustainability. Our modern fleet and eco-friendly practices reduce carbon emissions, ensuring a greener future for all.",
+        "word_count": 35,
+        "icon": "BiAirplane"
+      },
+      "ideal_destination_partner": {
+        "heading": "Your Ideal Destination Partner",
+        "description": "Choose XYZ Airlines as your travel companion. With our extensive route network, exceptional service, and commitment to quality, we make every journey memorable.",
+        "icon": "BiWorld"
+      },
+      "using_AI_for_better_experience": {
+        "heading": "Using AI for a Better Experience",
+        "description": "Experience innovation with XYZ Airlines. Leveraging cutting-edge AI technology, we personalize your travel experience, making it seamless and tailored to your preferences.",
+        "icon": "BiBrain"
+      }
+    }
+  }
+}
