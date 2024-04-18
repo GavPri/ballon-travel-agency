@@ -4,8 +4,12 @@ import BackgroundImage from "../../components/BackgroundImage";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1240px] m-auto h-[800px] rounded-lg">
-      <BackgroundImage imageUrl={hero} height={800} className={`rounded-lg`} />
+    <div className="max-w-[1240px] m-auto h-[800px] relative mt-24">
+      <BackgroundImage
+        imageUrl={hero}
+        height={800}
+        className={`rounded-lg absolute`}
+      />
     </div>
   );
 };
