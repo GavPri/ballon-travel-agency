@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Logo from "../Logo";
 import NavbarLinks from "./NavbarLinks";
 import SocialMediaLinks from "./SocialMediaLinks";
+import HamburgerMenu from "./HamburgerMenu";
+import MobileNavLinks from "./MobileNavLinks";
 
 const Navbar = () => {
   // ----- handling state for hamburger menu span
@@ -27,58 +29,16 @@ const Navbar = () => {
           {/* ----- Social media links */}
           <SocialMediaLinks />
           {/* ----- hamburger menu */}
-          <div
-            className="ml-auto w-6 aspect-square relative md:hidden"
-            onClick={handleMobileMenu}
-          >
-            {/* ---- first & last span - opacity 0, width 0 when open */}
-            <span
-              className={
-                mobileMenu
-                  ? `opacity-0 w-0 bg-yellow h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-0/4`
-                  : `bg-yellow w-full h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-0/4`
-              }
-            ></span>
-            {/* ----- Rotate 45 deg when open */}
-            <span
-              className={
-                mobileMenu
-                  ? `-rotate-45 bg-yellow w-full h-0.5 rounded-full absolute transition-all duration-500 ease-in-out top-1/4`
-                  : `bg-yellow w-full h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-1/4`
-              }
-            ></span>
-            {/* ----- Rotate -45 deg when open */}
-            <span
-              className={
-                mobileMenu
-                  ? `rotate-45 bg-yellow w-full h-0.5 rounded-full absolute transition-all duration-500 ease-in-out top-1/4`
-                  : `bg-yellow w-full h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-1/4`
-              }
-            ></span>
-            {/* ---- first & last span - opacity 0, width 0 when open */}
-            <span
-              className={
-                mobileMenu
-                  ? `opacity-0 w-0 bg-yellow h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-2/4`
-                  : `bg-yellow w-full h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-2/4`
-              }
-            ></span>
-          </div>
+          <HamburgerMenu
+            mobileMenu={mobileMenu}
+            setMobileMenu={setMobileMenu}
+            handleMobileMenu={handleMobileMenu}
+          />
           {/* ----- Side Bar NavList */}
         </nav>
       </div>
-      <ul
-        className={`absolute top-16  h-[90vh] bg-dark text-white z-50 flex flex-col justify-center items-center mobile-menu-animation ${
-          mobileMenu ? "open" : "close"
-        }`}
-      >
-        <li className="list-items-hover mb-4 text-2xl">Home</li>
-        <li className="list-items-hover mb-4 text-2xl">About</li>
-        <li className="list-items-hover mb-4 text-2xl">Flights</li>
-        <li className="list-items-hover mb-4 text-2xl">Destinations</li>
-        <li className="list-items-hover mb-4 text-2xl">Blogs</li>
-        <li className="list-items-hover mb-4 text-2xl">Contact</li>
-      </ul>
+      {/* ----- Mobile NavLinks */}
+      <MobileNavLinks mobileMenu={mobileMenu} />
     </div>
   );
 };
