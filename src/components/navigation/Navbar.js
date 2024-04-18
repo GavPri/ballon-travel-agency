@@ -13,10 +13,11 @@ const Navbar = () => {
       {/* ----- Social media links */}
       <SocialMediaLinks />
       {/* ----- hamburger menu */}
-      <div className="ml-auto flex flex-col justify-between items-center w-6 aspect-square">
-        <span className="bg-yellow w-full h-1 rounded-full"></span>
-        <span className="bg-yellow w-full h-1 rounded-full"></span>
-        <span className="bg-yellow w-full h-1 rounded-full"></span>
+      <div className="ml-auto w-6 aspect-square relative">
+        <span className="bg-yellow w-full h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-0/4"></span>
+        <span className="bg-yellow w-full h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-1/4"></span>
+        <span className="bg-yellow w-full h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-1/4"></span>
+        <span className="bg-yellow w-full h-0.5 rounded-full absolute rotate-0 transition-all duration-500 ease-in-out top-2/4"></span>
       </div>
     </nav>
   );
