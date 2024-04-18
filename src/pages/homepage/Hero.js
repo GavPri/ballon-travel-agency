@@ -5,15 +5,15 @@ import Button from "../../components/Button";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1240px] m-auto h-[800px] relative mt-4 flex justify-center items-center">
+    <div className="md:max-w-[1240px] w-screen mx-2 m-auto h-[800px] relative mt-4 flex justify-center md:items-center items-start">
       <BackgroundImage
         imageUrl={hero}
         height={800}
         className={`rounded-lg absolute`}
         backgroundPosition={`top, center`}
       />
-      <div className="z-10 text-center flex flex-col justify-center items-center">
-        <h2 className="font-M text-yellow text-7xl uppercase ">
+      <div className="z-10 text-center flex flex-col justify-center items-center mt-24">
+        <h2 className="font-M text-yellow md:text-7xl text-xl uppercase ">
           Emb<span className="stand-out">a</span>rk on a journe
           <span className="stand-out">
             y<br></br>
@@ -21,7 +21,7 @@ const Hero = () => {
           of a lif<span className="stand-out">e</span>
           time
         </h2>
-        <p className="text-center p-6 text-white font-Fig max-w-readable text-xl">
+        <p className="text-center p-6 text-white font-Fig max-w-readable md:text-xl">
           Embark on unforgettable journeys with us! Explore exotic destinations,
           savor local cuisine, and create lasting memories. From breathtaking
           landscapes to vibrant cities. Your adventure starts here!
