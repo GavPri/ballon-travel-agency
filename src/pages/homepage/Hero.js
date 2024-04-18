@@ -11,15 +11,21 @@ const Hero = () => {
         className={`rounded-lg absolute`}
         backgroundPosition={`top, center`}
       />
-      <div className="z-10 ">
-        <h2 className="font-M text-yellow text-5xl uppercase text-center">
+      <div className="z-10">
+        <h2 className="font-M text-yellow text-7xl uppercase text-center">
           Emb<span className="stand-out">a</span>rk on a journe
           <span className="stand-out">
             y<br></br>
-          </span>{" "}
+          </span>
           of a lif<span className="stand-out">e</span>
           time
         </h2>
+        <p className="text-center p-6 text-white font-Fig">
+          Embark on unforgettable journeys with us! Explore exotic destinations,
+          savor local cuisine, and create lasting memories. From breathtaking
+          landscapes to vibrant cities, let us turn your travel dreams into
+          reality. Your adventure starts here!
+        </p>
       </div>
     </div>
   );
