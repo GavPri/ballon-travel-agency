@@ -2,3 +2,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* ----- Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
