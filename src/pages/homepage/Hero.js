@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../../images/hero.jpg";
 import BackgroundImage from "../../components/BackgroundImage";
+import Button from "../../components/Button";
 
 const Hero = () => {
   return (
@@ -23,9 +24,12 @@ const Hero = () => {
         <p className="text-center p-6 text-white font-Fig max-w-readable text-xl">
           Embark on unforgettable journeys with us! Explore exotic destinations,
           savor local cuisine, and create lasting memories. From breathtaking
-          landscapes to vibrant cities, let us turn your travel dreams into
-          reality. Your adventure starts here!
+          landscapes to vibrant cities. Your adventure starts here!
         </p>
+        <Button
+          className={`z-20 bg-amber rounded-full h-10 w-fit px-4 py-2 font-Fig font-bold text-dark`}
+          text={`Book now`}
+        />
       </div>
     </div>
   );
