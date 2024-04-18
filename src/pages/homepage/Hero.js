@@ -8,8 +8,7 @@ const Hero = () => {
     <div className="md:max-w-[1240px] w-[90vw] m-auto h-[800px] relative mt-4 flex justify-center md:items-center items-start">
       <BackgroundImage
         imageUrl={hero}
-        height={800}
-        className={`rounded-lg absolute`}
+        className={`rounded-lg absolute h-2/4 md:h-full`}
         backgroundPosition={`top, center`}
       />
       <div className="z-10 text-center flex flex-col justify-center items-center mt-24">
@@ -21,13 +20,13 @@ const Hero = () => {
           of a lif<span className="stand-out">e</span>
           time
         </h2>
-        <p className="text-center p-6 text-white font-Fig max-w-readable md:text-xl">
+        <p className="text-center p-6 text-white font-Fig max-w-readable md:text-xl hidden md:flex">
           Embark on unforgettable journeys with us! Explore exotic destinations,
           savor local cuisine, and create lasting memories. From breathtaking
           landscapes to vibrant cities. Your adventure starts here!
         </p>
         <Button
-          className={`z-20 bg-amber rounded-full h-10 w-fit px-4 py-2 font-Fig font-bold text-dark`}
+          className={`z-20 bg-amber rounded-full h-10 w-fit px-4 py-2 font-Fig font-bold text-dark mt-12 md:mt-6`}
           text={`Book now`}
         />
       </div>
