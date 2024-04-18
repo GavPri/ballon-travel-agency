@@ -68,7 +68,7 @@ const Navbar = () => {
         </nav>
       </div>
       <ul
-        className={`absolute top-16 right-0 w-[100vw] h-[90vh] bg-dark text-white z-50 flex flex-col justify-center items-center mobile-menu-animation ${
+        className={`absolute top-16  h-[90vh] bg-dark text-white z-50 flex flex-col justify-center items-center mobile-menu-animation ${
           mobileMenu ? "open" : "close"
         }`}
       >

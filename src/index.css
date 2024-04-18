@@ -28,18 +28,20 @@ body {
   }
   /* ----- Animations for mobile menu slide in */
   .mobile-menu-animation {
-    transition-property: opacity, transform;
+    transition-property: opacity, width;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
   }
 
   .mobile-menu-animation.open {
     opacity: 1;
-    transform: translateX(0);
+    width: 100vw;
+
   }
 
   .mobile-menu-animation.close {
     opacity: 0;
-    transform: translateX(100%);
+    width: 0vw;
+
   }
 }
