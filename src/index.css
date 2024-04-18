@@ -20,4 +20,9 @@ body {
   .list-items-hover:hover {
     color: #ffd600;
   }
+  /* ----- Stand out letters in text */
+  .stand-out {
+    font-style: italic;
+    color: white;
+  }
 }
