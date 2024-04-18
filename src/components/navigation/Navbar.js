@@ -1,5 +1,10 @@
 import React from "react";
 import Logo from "../Logo";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillTwitterSquare,
+} from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -28,8 +33,19 @@ const Navbar = () => {
         </li>
       </ul>
       {/* ----- Social media links */}
-      <div>
-        <p className="font-Fig text-grey">Follow Us :</p>
+      <div className="flex text-white items-center">
+        <p className="font-Fig text-sm">Follow Us :</p>
+        <ul className="flex text">
+          <li className="mx-2 hover:cursor-pointer hover:text-yellow transition-all duration-500 ease-in-out">
+            <AiFillFacebook size={20} />
+          </li>
+          <li className="mx-2 hover:cursor-pointer hover:text-yellow transition-all duration-500 ease-in-out">
+            <AiFillTwitterSquare size={20} />
+          </li>
+          <li className="mx-2 hover:cursor-pointer hover:text-yellow transition-all duration-500 ease-in-out">
+            <AiFillInstagram size={20} />
+          </li>
+        </ul>
       </div>
     </nav>
   );
