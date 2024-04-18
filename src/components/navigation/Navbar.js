@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
-}
+  return <nav className="max-w-[1240px] bg-dark h-24 m-auto"></nav>;
+};
 
-export default Navbar
+export default Navbar;
