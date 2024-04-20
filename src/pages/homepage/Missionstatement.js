@@ -1,5 +1,8 @@
 import React from "react";
 import FetchData from "../../api/FetchData";
+import { PiTreeEvergreenBold } from "react-icons/pi";
+import { IoLocationOutline } from "react-icons/io5";
+import { TbRobot } from "react-icons/tb";
 
 const Missionstatement = () => {
   // ----- Fetch data from the specified endpoint
@@ -37,7 +40,7 @@ const Missionstatement = () => {
             >
               {/* ------ H3 container */}
               <div className="flex justify-center items-between">
-                <div className="h-16 aspect-square bg-transparent relative mr-6">
+                <div className="h-16 aspect-square bg-transparent relative mr-6 flex justify-center items-center">
                   <div className="h-10 border-2 border-[#013220] aspect-square rounded-lg top-0 left-0 absolute"></div>
                   <div className="h-10 aspect-square rounded-lg bg-[#013220] right-0  bottom-1 absolute"></div>
                 </div>
