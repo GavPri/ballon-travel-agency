@@ -8,7 +8,7 @@ const Missionstatement = () => {
     <div className="max-w-[1240px] m-auto">
       {/* ----- Section Header */}
       <div className="w-full text-center">
-        <h2 className="uppercase text-5xl text-yellow font-M">
+        <h2 className="uppercase text-5xl text-yellow font-M header-spacing">
           Th<span className="stand-out">e</span> Art of <br></br> tail
           <span className="stand-out">o</span>red tr
           <span className="stand-out">a</span>vel
