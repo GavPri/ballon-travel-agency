@@ -5,7 +5,7 @@ const FetchData = (endpoint) => {
   //  Define state variables to manage fetched data, loading state, and errors
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [errors, setErros] = useState(null);
+  const [errors, setErrors] = useState(null);
 
   useEffect(() => {
     // Define an asynchronous function to fetch data from the specified endpoint
@@ -13,13 +13,13 @@ const FetchData = (endpoint) => {
       try {
         // Make a GET request using Axios to fetch data from the specified endpoint
         const response = await axios.get(
-          `https://jsonplaceholder.typicode.com/${endpoint}`,
+          `https://jsonplaceholder.typicode.com/${endpoint}`,)
           //   Update the data state variable with the fetched data
           setData(response.data)
-        );
+        ;
       } catch (errors) {
         // If an error occurs during fetching, set the error state variable
-        setErros(errors);
+        setErrors(errors);
       } finally {
         // Set the loading state variable to false once fetching is complete, regardless of success or failure
         setIsLoading(false);
