@@ -13,7 +13,8 @@ const FetchData = (endpoint) => {
       try {
         // Make a GET request using Axios to fetch data from the specified endpoint
         const response = await axios.get(
-          `https://jsonplaceholder.typicode.com/${endpoint}`,)
+          `https://my-json-server.typicode.com/${endpoint}`
+        );
           //   Update the data state variable with the fetched data
           setData(response.data)
         ;

@@ -4,7 +4,9 @@ import ProcessData from "../../api/ProcessData";
 
 const Missionstatement = () => {
   // ----- Fetch data from the specified endpoint
-  const { data, isLoading, errors } = FetchData("gavpri/ballon-travel-agency");
+  const { data, isLoading, errors } = FetchData(
+    "gavpri/ballon-travel-agency/db"
+  );
 
   // ----- Set Loading state
   if (isLoading) {
