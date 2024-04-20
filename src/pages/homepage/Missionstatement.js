@@ -1,6 +1,5 @@
 import React from "react";
 import FetchData from "../../api/FetchData";
-import ProcessData from "../../api/ProcessData";
 
 const Missionstatement = () => {
   // ----- Fetch data from the specified endpoint
@@ -21,7 +20,7 @@ const Missionstatement = () => {
     // ----- Wrapping Div
     <div className="max-w-[1240px] m-auto">
       {/* ----- Section Header */}
-      <div className="w-full text-center">
+      <div className="w-full text-center mb-4">
         <h2 className="uppercase text-xl md:text-5xl text-yellow font-M header-spacing">
           Th<span className="stand-out">e</span> Art of <br></br> tail
           <span className="stand-out">o</span>red tr
@@ -29,13 +28,17 @@ const Missionstatement = () => {
         </h2>
       </div>
       {/* ----- Mapping Over fetched data */}
-      <div>
+      <div className="w-3/4 m-auto">
         {data &&
           Object.values(data.company_info.missions_and_stats).map((mission) => (
-            <div key={mission.heading}>
-              <h3>{mission.heading}</h3>
-              <p>{mission.description}</p>
-              <div>{mission.icon}</div>
+            <div
+              key={mission.heading}
+              className="text-white mb-8 max-w-readable"
+            >
+              <h3 className="mb-4 text-2xl font-M header-spacing">
+                {mission.heading}
+              </h3>
+              <p className="font-Fig para-spacing">{mission.description}</p>
             </div>
           ))}
       </div>
