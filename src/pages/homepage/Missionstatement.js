@@ -36,12 +36,12 @@ const Missionstatement = () => {
               className="text-white mb-8 max-w-readable"
             >
               {/* ------ H3 container */}
-              <div className="flex justify-between items-center">
+              <div className="flex justify-center items-between">
                 <div className="h-16 aspect-square bg-transparent relative mr-6">
                   <div className="h-10 border-2 border-[#013220] aspect-square rounded-lg top-0 left-0 absolute"></div>
                   <div className="h-10 aspect-square rounded-lg bg-[#013220] right-0  bottom-1 absolute"></div>
                 </div>
-                <h3 className="mb-4 text-2xl font-M header-spacing">
+                <h3 className="mb-4 text-2xl font-Fig header-spacing">
                   {mission.heading}
                 </h3>
               </div>
