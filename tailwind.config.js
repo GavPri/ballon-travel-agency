@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        M: ["Merienda", "sans-serif"],
+        M: ["Sedan", "sans-serif"],
         Fig: ["Figtree", "sans-serif"],
       },
       maxWidth: {
