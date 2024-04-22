@@ -20,7 +20,7 @@ const ContinentsCarousel = () => {
   return (
     <div className="max-w-[90vw] m-auto">
       {/* ------ Heading  */}
-      <h2 className="uppercase text-yellow font-M header-spacing text-xl text-center">
+      <h2 className="uppercase text-yellow font-M header-spacing text-xl text-center mb-4">
         Disc<span className="stand-out">o</span>ver popula
         <span className="stand-out">r</span> Destin
         <span className="stand-out">a</span>tions
