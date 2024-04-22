@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // ----- import fetch data hook.
 import FetchData from "../../api/FetchData";
 
@@ -7,7 +7,6 @@ const ContinentsCarousel = () => {
   const { data, isLoading, errors } = FetchData(
     "gavpri/ballon-travel-agency/db"
   );
-
   // ----- set loading states
   if (isLoading) {
     return <div>...Loading</div>;
@@ -16,7 +15,8 @@ const ContinentsCarousel = () => {
   if (errors) {
     return <div>Oops, there was an error... {errors.message}</div>;
   }
-
+  // ----- set state for carousel
+  const [currentIndex, setCurrentIndex] = useState(0);
   return (
     <div className="max-w-[90vw] m-auto">
       {/* ------ Heading  */}
