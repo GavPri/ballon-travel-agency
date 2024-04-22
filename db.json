@@ -51,28 +51,28 @@
         "name": "Yosemite",
         "country": "United States",
         "price": "$450",
-        "image": "yosemite_image.jpg",
+        "image": "https://images.pexels.com/photos/15202881/pexels-photo-15202881/free-photo-of-woman-on-stones-on-stream-in-yosemite-national-park.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "North America"
       },
       {
         "name": "Santorini",
         "country": "Greece",
         "price": "$600",
-        "image": "santorini_image.jpg",
+        "image": "https://images.pexels.com/photos/3722809/pexels-photo-3722809.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Europe"
       },
       {
         "name": "Machu Picchu",
         "country": "Peru",
         "price": "$700",
-        "image": "machu_picchu_image.jpg",
+        "image": "https://images.pexels.com/photos/2516418/pexels-photo-2516418.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "South America"
       },
       {
         "name": "Tokyo",
         "country": "Japan",
         "price": "$800",
-        "image": "tokyo_image.jpg",
+        "image": "https://images.pexels.com/photos/3399868/pexels-photo-3399868.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Asia"
       }
     ],
@@ -111,28 +111,28 @@
         "name": "Galapagos Islands",
         "country": "Ecuador",
         "price": "$900",
-        "image": "galapagos_image.jpg",
+        "image": "https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "South America"
       },
       {
         "name": "Rio de Janeiro",
         "country": "Brazil",
         "price": "$700",
-        "image": "rio_de_janeiro_image.jpg",
+        "image": "https://images.pexels.com/photos/2869354/pexels-photo-2869354.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "South America"
       },
       {
         "name": "Machu Picchu",
         "country": "Peru",
         "price": "$700",
-        "image": "machu_picchu_image.jpg",
+        "image": "https://images.pexels.com/photos/2516418/pexels-photo-2516418.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "South America"
       },
       {
         "name": "Iguazu Falls",
         "country": "Argentina",
         "price": "$600",
-        "image": "iguazu_falls_image.jpg",
+        "image": "https://images.pexels.com/photos/18735360/pexels-photo-18735360/free-photo-of-iguazu-falls-in-argentina.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "continent": "South America"
       }
     ],
@@ -141,28 +141,28 @@
         "name": "Paris",
         "country": "France",
         "price": "$600",
-        "image": "paris_image.jpg",
+        "image": "https://images.pexels.com/photos/1125212/pexels-photo-1125212.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Europe"
       },
       {
         "name": "Rome",
         "country": "Italy",
         "price": "$700",
-        "image": "rome_image.jpg",
+        "image": "https://images.pexels.com/photos/1577510/pexels-photo-1577510.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Europe"
       },
       {
         "name": "Barcelona",
         "country": "Spain",
         "price": "$650",
-        "image": "barcelona_image.jpg",
+        "image": "https://images.pexels.com/photos/16041820/pexels-photo-16041820/free-photo-of-parc-de-la-ciutadella-barcelona.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Europe"
       },
       {
         "name": "Amsterdam",
         "country": "Netherlands",
         "price": "$550",
-        "image": "amsterdam_image.jpg",
+        "image": "https://images.pexels.com/photos/4456988/pexels-photo-4456988.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Europe"
       }
     ],
@@ -171,28 +171,28 @@
         "name": "Cape Town",
         "country": "South Africa",
         "price": "$800",
-        "image": "cape_town_image.jpg",
+        "image": "https://images.pexels.com/photos/4253928/pexels-photo-4253928.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Africa"
       },
       {
         "name": "Maasai Mara National Reserve",
         "country": "Kenya",
         "price": "$750",
-        "image": "maasai_mara_image.jpg",
+        "image": "https://images.pexels.com/photos/18710316/pexels-photo-18710316/free-photo-of-giraffe-on-the-savannah.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Africa"
       },
       {
         "name": "Victoria Falls",
         "country": "Zimbabwe",
         "price": "$700",
-        "image": "victoria_falls_image.jpg",
+        "image": "https://images.pexels.com/photos/3889929/pexels-photo-3889929.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Africa"
       },
       {
         "name": "Sahara Desert",
         "country": "Multiple",
         "price": "$1000",
-        "image": "sahara_desert_image.jpg",
+        "image": "https://images.pexels.com/photos/3889891/pexels-photo-3889891.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Africa"
       }
     ],
@@ -201,28 +201,28 @@
         "name": "Kyoto",
         "country": "Japan",
         "price": "$750",
-        "image": "kyoto_image.jpg",
+        "image": "https://images.pexels.com/photos/12195080/pexels-photo-12195080.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Asia"
       },
       {
         "name": "Bali",
         "country": "Indonesia",
         "price": "$600",
-        "image": "bali_image.jpg",
+        "image": "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Asia"
       },
       {
         "name": "Great Wall of China",
         "country": "China",
         "price": "$700",
-        "image": "great_wall_image.jpg",
+        "image": "https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Asia"
       },
       {
         "name": "Taj Mahal",
         "country": "India",
         "price": "$800",
-        "image": "taj_mahal_image.jpg",
+        "image": "https://images.pexels.com/photos/5458393/pexels-photo-5458393.jpeg?auto=compress&cs=tinysrgb&w=300",
         "continent": "Asia"
       }
     ]
