@@ -18,5 +18,209 @@
         "icon": "BiBrain"
       }
     }
+  },
+  "continents": [
+    {
+      "name": "North America",
+      "slug": "north_america"
+    },
+    {
+      "name": "South America",
+      "slug": "south_america"
+    },
+    {
+      "name": "Europe",
+      "slug": "europe"
+    },
+    {
+      "name": "Africa",
+      "slug": "africa"
+    },
+    {
+      "name": "Asia",
+      "slug": "asia"
+    }
+  ],
+  "locations": {
+    "popular": [
+      {
+        "name": "Yosemite",
+        "country": "United States",
+        "price": "$450",
+        "image": "yosemite_image.jpg",
+        "continent": "North America"
+      },
+      {
+        "name": "Santorini",
+        "country": "Greece",
+        "price": "$600",
+        "image": "santorini_image.jpg",
+        "continent": "Europe"
+      },
+      {
+        "name": "Machu Picchu",
+        "country": "Peru",
+        "price": "$700",
+        "image": "machu_picchu_image.jpg",
+        "continent": "South America"
+      },
+      {
+        "name": "Tokyo",
+        "country": "Japan",
+        "price": "$800",
+        "image": "tokyo_image.jpg",
+        "continent": "Asia"
+      }
+    ],
+    "north_america": [
+      {
+        "name": "Grand Canyon",
+        "country": "United States",
+        "price": "$400",
+        "image": "grand_canyon_image.jpg",
+        "continent": "North America"
+      },
+      {
+        "name": "Banff National Park",
+        "country": "Canada",
+        "price": "$550",
+        "image": "banff_image.jpg",
+        "continent": "North America"
+      },
+      {
+        "name": "Niagara Falls",
+        "country": "Canada",
+        "price": "$300",
+        "image": "niagara_falls_image.jpg",
+        "continent": "North America"
+      },
+      {
+        "name": "Yellowstone National Park",
+        "country": "United States",
+        "price": "$500",
+        "image": "yellowstone_image.jpg",
+        "continent": "North America"
+      }
+    ],
+    "south_america": [
+      {
+        "name": "Galapagos Islands",
+        "country": "Ecuador",
+        "price": "$900",
+        "image": "galapagos_image.jpg",
+        "continent": "South America"
+      },
+      {
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "price": "$700",
+        "image": "rio_de_janeiro_image.jpg",
+        "continent": "South America"
+      },
+      {
+        "name": "Machu Picchu",
+        "country": "Peru",
+        "price": "$700",
+        "image": "machu_picchu_image.jpg",
+        "continent": "South America"
+      },
+      {
+        "name": "Iguazu Falls",
+        "country": "Argentina",
+        "price": "$600",
+        "image": "iguazu_falls_image.jpg",
+        "continent": "South America"
+      }
+    ],
+    "europe": [
+      {
+        "name": "Paris",
+        "country": "France",
+        "price": "$600",
+        "image": "paris_image.jpg",
+        "continent": "Europe"
+      },
+      {
+        "name": "Rome",
+        "country": "Italy",
+        "price": "$700",
+        "image": "rome_image.jpg",
+        "continent": "Europe"
+      },
+      {
+        "name": "Barcelona",
+        "country": "Spain",
+        "price": "$650",
+        "image": "barcelona_image.jpg",
+        "continent": "Europe"
+      },
+      {
+        "name": "Amsterdam",
+        "country": "Netherlands",
+        "price": "$550",
+        "image": "amsterdam_image.jpg",
+        "continent": "Europe"
+      }
+    ],
+    "africa": [
+      {
+        "name": "Cape Town",
+        "country": "South Africa",
+        "price": "$800",
+        "image": "cape_town_image.jpg",
+        "continent": "Africa"
+      },
+      {
+        "name": "Maasai Mara National Reserve",
+        "country": "Kenya",
+        "price": "$750",
+        "image": "maasai_mara_image.jpg",
+        "continent": "Africa"
+      },
+      {
+        "name": "Victoria Falls",
+        "country": "Zimbabwe",
+        "price": "$700",
+        "image": "victoria_falls_image.jpg",
+        "continent": "Africa"
+      },
+      {
+        "name": "Sahara Desert",
+        "country": "Multiple",
+        "price": "$1000",
+        "image": "sahara_desert_image.jpg",
+        "continent": "Africa"
+      }
+    ],
+    "asia": [
+      {
+        "name": "Kyoto",
+        "country": "Japan",
+        "price": "$750",
+        "image": "kyoto_image.jpg",
+        "continent": "Asia"
+      },
+      {
+        "name": "Bali",
+        "country": "Indonesia",
+        "price": "$600",
+        "image": "bali_image.jpg",
+        "continent": "Asia"
+      },
+      {
+        "name": "Great Wall of China",
+        "country": "China",
+        "price": "$700",
+        "image": "great_wall_image.jpg",
+        "continent": "Asia"
+      },
+      {
+        "name": "Taj Mahal",
+        "country": "India",
+        "price": "$800",
+        "image": "taj_mahal_image.jpg",
+        "continent": "Asia"
+      }
+    ]
   }
 }
