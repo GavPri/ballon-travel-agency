@@ -30,7 +30,7 @@ const ContinentsCarousel = () => {
         {data.continents.map((continent, index) => (
           <div
             key={index}
-            className="p-1 bg-[#006400] font-Fig text-white basis-[30%] rounded-lg flex justify-center items-center"
+            className="p-1 bg-[#013220] font-Fig text-white basis-[30%] rounded-lg flex justify-center items-center mb-2"
           >
             {continent.name}
           </div>
