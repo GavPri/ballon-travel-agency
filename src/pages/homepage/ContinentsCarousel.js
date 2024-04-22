@@ -7,6 +7,14 @@ const ContinentsCarousel = () => {
   const { data, isLoading, errors } = FetchData(
     "gavpri/ballon-travel-agency/db"
   );
+  // ----- set state for carousel
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  //   ----- Handle current index
+  const handleIndex = (index) => {
+    setCurrentIndex(index);
+    console.log(index);
+  };
   // ----- set loading states
   if (isLoading) {
     return <div>...Loading</div>;
@@ -15,8 +23,7 @@ const ContinentsCarousel = () => {
   if (errors) {
     return <div>Oops, there was an error... {errors.message}</div>;
   }
-  // ----- set state for carousel
-  const [currentIndex, setCurrentIndex] = useState(0);
+
   return (
     <div className="max-w-[90vw] m-auto">
       {/* ------ Heading  */}
@@ -29,6 +36,7 @@ const ContinentsCarousel = () => {
       <div className="flex flex-wrap gap-1 justify-center">
         {data.continents.map((continent, index) => (
           <div
+          onClick={() => handleIndex(index)}
             key={index}
             className="p-1 bg-[#013220] font-Fig text-white basis-[30%] rounded-lg flex justify-center items-center mb-2"
           >
