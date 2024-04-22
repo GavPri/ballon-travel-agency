@@ -29,7 +29,7 @@ const Missionstatement = () => {
 
   return (
     // ----- Wrapping Div
-    <div className="max-w-[1240px] m-auto">
+    <div className="max-w-[1240px] m-auto flex flex-col justify-start items-center">
       {/* ----- Section Header */}
       <div className="w-full text-center mb-4">
         <h2 className="uppercase text-xl md:text-5xl text-yellow font-M header-spacing">
@@ -39,16 +39,16 @@ const Missionstatement = () => {
         </h2>
       </div>
       {/* ----- Mapping Over fetched data */}
-      <div className="w-3/4 m-auto">
+      <div className="max-w-[90vw] mx-2 md:mx-4 md:max-w-[1240px] m-auto md:flex md:flex-wrap lg:flex-nowrap justify-center items-start">
         {data &&
           Object.values(data.company_info.missions_and_stats).map(
             (mission, index) => (
               <div
                 key={mission.heading}
-                className="text-white mb-8 max-w-readable"
+                className="text-white mb-8 max-w-readable m-auto"
               >
                 {/* ------ H3 container */}
-                <div className="flex justify-center items-between">
+                <div className="mb-4 flex justify-start items-center md:h-32 ">
                   <div className="h-16 aspect-square bg-transparent relative mr-6 flex justify-center items-center">
                     <div className=" text-yellow h-16 flex justify-center items-center z-10">
                       {MissionIcons[index % MissionIcons.length]}
@@ -57,7 +57,7 @@ const Missionstatement = () => {
                     <div className="h-10 border-2 border-[#013220] aspect-square rounded-lg top-0 left-0 absolute"></div>
                     <div className="h-10 aspect-square rounded-lg bg-[#013220] right-0  bottom-1 absolute"></div>
                   </div>
-                  <h3 className="mb-4 text-2xl font-Fig header-spacing">
+                  <h3 className="md:text-xl font-Fig header-spacing">
                     {mission.heading}
                   </h3>
                 </div>
