@@ -41,7 +41,7 @@
       "slug": "asia"
     },
     {
-      "name" : "Popular",
+      "name": "Popular",
       "slug": "popular"
     }
   ],
@@ -81,28 +81,28 @@
         "name": "Grand Canyon",
         "country": "United States",
         "price": "$400",
-        "image": "grand_canyon_image.jpg",
+        "image": "https://images.pexels.com/photos/545960/pexels-photo-545960.jpeg?auto=compress&cs=tinysrgb&w=600",
         "continent": "North America"
       },
       {
         "name": "Banff National Park",
         "country": "Canada",
         "price": "$550",
-        "image": "banff_image.jpg",
+        "image": "https://images.pexels.com/photos/2662086/pexels-photo-2662086.jpeg?auto=compress&cs=tinysrgb&w=600",
         "continent": "North America"
       },
       {
         "name": "Niagara Falls",
         "country": "Canada",
         "price": "$300",
-        "image": "niagara_falls_image.jpg",
+        "image": "https://images.pexels.com/photos/695214/pexels-photo-695214.jpeg?auto=compress&cs=tinysrgb&w=600",
         "continent": "North America"
       },
       {
         "name": "Yellowstone National Park",
         "country": "United States",
         "price": "$500",
-        "image": "yellowstone_image.jpg",
+        "image": "https://images.pexels.com/photos/10689140/pexels-photo-10689140.jpeg?auto=compress&cs=tinysrgb&w=600",
         "continent": "North America"
       }
     ],
