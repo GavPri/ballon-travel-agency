@@ -13,6 +13,24 @@ const ContinentsCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedContinent, setSelectedContinent] = useState(null);
 
+  //   ----- prevIndex
+  const handlePrevIndex = (currentIndex, data) => {
+    if (currentIndex === 0) {
+      setCurrentIndex(data.continents.length - 1);
+    } else {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  //   ----- handleNextSlide
+  const handleNextIndex = (currentIndex, data) => {
+    if (currentIndex === data.continents.length - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
   useEffect(() => {
     if (data && data.continents.length > 0) {
       setSelectedContinent(data.continents[currentIndex]);
@@ -89,10 +107,16 @@ const ContinentsCarousel = () => {
       </div>
       {/* ----- Carousel Buttons */}
       <div className="flex justify-evenly items-center">
-        <div className="bg-yellow text-dark rounded-full h-12 w-12 flex justify-center items-center">
+        <div
+          className="bg-yellow text-dark rounded-full h-12 w-12 flex justify-center items-center"
+          onClick={() => handlePrevIndex(currentIndex, data)}
+        >
           <IoIosArrowRoundBack size={40} />
         </div>
-        <div className="bg-yellow text-dark rounded-full h-12 w-12 flex justify-center items-center">
+        <div
+          onClick={() => handleNextIndex(currentIndex, data)}
+          className="bg-yellow text-dark rounded-full h-12 w-12 flex justify-center items-center"
+        >
           <IoIosArrowRoundForward size={40} />
         </div>
       </div>
