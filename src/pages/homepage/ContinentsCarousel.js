@@ -13,7 +13,6 @@ const ContinentsCarousel = () => {
   //   ----- Handle current index
   const handleIndex = (index) => {
     setCurrentIndex(index);
-    console.log(index);
   };
   // ----- set loading states
   if (isLoading) {
@@ -36,14 +35,18 @@ const ContinentsCarousel = () => {
       <div className="flex flex-wrap gap-1 justify-center">
         {data.continents.map((continent, index) => (
           <div
-          onClick={() => handleIndex(index)}
+            onClick={() => handleIndex(index)}
             key={index}
-            className="p-1 bg-[#013220] font-Fig text-white basis-[30%] rounded-lg flex justify-center items-center mb-2"
+            className={`transition-all duration-500 p-1 bg-[#013220] font-Fig basis-[30%] rounded-lg flex justify-center items-center mb-2 ${
+              currentIndex === index ? `bg-yellow text-dark` : `text-white`
+            }`}
           >
             {continent.name}
           </div>
         ))}
       </div>
+      {/* ----- Continents image */}
+      
     </div>
   );
 };
