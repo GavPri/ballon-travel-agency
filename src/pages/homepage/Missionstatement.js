@@ -45,7 +45,7 @@ const Missionstatement = () => {
             (mission, index) => (
               <div
                 key={mission.heading}
-                className="text-white mb-8 max-w-readable m-auto"
+                className="text-white max-w-readable m-0"
               >
                 {/* ------ H3 container */}
                 <div className="mb-4 flex justify-start items-center md:h-32 ">
@@ -61,10 +61,27 @@ const Missionstatement = () => {
                     {mission.heading}
                   </h3>
                 </div>
-                <p className="font-Fig para-spacing">{mission.description}</p>
+                <p className="font-Fig para-spacing lg:pr-4 mb-6">
+                  {mission.description}
+                </p>
               </div>
             )
           )}
+      </div>
+      {/* ----- Statistics */}
+      <div className="flex justify-between items-center w-[90%]">
+        <div className="text-center mb-6">
+          <p className="text-3xl font-Fig text-white">15+</p>
+          <p className="font-Fig text-yellow px-2">Years of experience</p>
+        </div>
+        <div className="text-center mb-6">
+          <p className="text-3xl font-Fig text-white">24M</p>
+          <p className="font-Fig text-yellow px-2">Happy Travelers</p>
+        </div>
+        <div className="text-center mb-6">
+          <p className="text-3xl font-Fig text-white">550+</p>
+          <p className="font-Fig text-yellow  px-2">Unique Destinations</p>
+        </div>
       </div>
     </div>
   );
