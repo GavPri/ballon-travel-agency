@@ -26,10 +26,13 @@ const ContinentsCarousel = () => {
         <span className="stand-out">a</span>tions
       </h2>
       {/* ----- Continent Tabs */}
-      <div>
+      <div className="flex flex-wrap gap-1 justify-center">
         {data.continents.map((continent, index) => (
-          <div key={index}>
-            {continent.name} - {continent.slug}
+          <div
+            key={index}
+            className="p-1 bg-[#006400] font-Fig text-white basis-[30%] rounded-lg flex justify-center items-center"
+          >
+            {continent.name}
           </div>
         ))}
       </div>
