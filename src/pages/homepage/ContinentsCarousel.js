@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // ----- import fetch data hook.
 import FetchData from "../../api/FetchData";
 import { FaLocationPin } from "react-icons/fa6";
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 const ContinentsCarousel = () => {
   // ----- fetch and deconstruct data from api end point.
@@ -54,7 +55,7 @@ const ContinentsCarousel = () => {
         ))}
       </div>
       {/* ----- Continents image */}
-      <div className="w-[90vw] h-[40vh]">
+      <div className="w-[90vw] h-[40vh] mb-4">
         {selectedContinent && (
           <div className="h-full w-full">
             <div className="grid grid-cols-2 gap-2 w-full h-full ">
@@ -85,6 +86,15 @@ const ContinentsCarousel = () => {
             </div>
           </div>
         )}
+      </div>
+      {/* ----- Carousel Buttons */}
+      <div className="flex justify-evenly items-center">
+        <div className="bg-yellow text-dark rounded-full h-12 w-12 flex justify-center items-center">
+          <IoIosArrowRoundBack size={40} />
+        </div>
+        <div className="bg-yellow text-dark rounded-full h-12 w-12 flex justify-center items-center">
+          <IoIosArrowRoundForward size={40} />
+        </div>
       </div>
     </div>
   );
