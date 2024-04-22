@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // ----- import fetch data hook.
 import FetchData from "../../api/FetchData";
 
@@ -9,6 +9,13 @@ const ContinentsCarousel = () => {
   );
   // ----- set state for carousel
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedContinent, setSelectedContinent] = useState(null);
+
+  useEffect(() => {
+    if (data && data.continents.length > 0) {
+      setSelectedContinent(data.continents[currentIndex]);
+    }
+  }, [data, currentIndex]);
 
   //   ----- Handle current index
   const handleIndex = (index) => {
@@ -46,7 +53,26 @@ const ContinentsCarousel = () => {
         ))}
       </div>
       {/* ----- Continents image */}
-      <div></div>
+      <div className="w-[90vw] h-[40vh]">
+        {selectedContinent && (
+          <div className="h-full w-full">
+            <div className="grid grid-cols-2 gap-2 w-full h-full ">
+              {data.locations[selectedContinent.slug].map((location, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg shadow-md overflow-hidden h-full relative"
+                >
+                  <img
+                    src={location.image}
+                    alt={location.name}
+                    className="w-full h-full object-cover absolute top-0 left-0"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
