@@ -21,6 +21,10 @@
   },
   "continents": [
     {
+      "name": "Popular",
+      "slug": "popular"
+    },
+    {
       "name": "North America",
       "slug": "north_america"
     },
@@ -39,10 +43,6 @@
     {
       "name": "Asia",
       "slug": "asia"
-    },
-    {
-      "name": "Popular",
-      "slug": "popular"
     }
   ],
   "locations": {
