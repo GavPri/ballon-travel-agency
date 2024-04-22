@@ -1,6 +1,7 @@
 import Navbar from "./components/navigation/Navbar";
 import Hero from "../src/pages/homepage/Hero";
 import Missionstatement from "./pages/homepage/Missionstatement";
+import ContinentsCarousel from "./pages/homepage/ContinentsCarousel";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Missionstatement />
+      <ContinentsCarousel />
     </div>
   );
 }
