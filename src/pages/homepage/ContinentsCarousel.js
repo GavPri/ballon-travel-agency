@@ -107,11 +107,11 @@ const ContinentsCarousel = () => {
                     alt={location.name}
                     className="w-full h-full object-cover absolute top-0 left-0 brightness-50"
                   />
-                  <div className="w-full bg-gradient-to-b from-transparent to-dark mb-auto h-1/2 absolute bottom-0">
+                  <div className="w-full bg-gradient-to-b from-transparent to-dark mb-auto h-1/2 absolute bottom-0 flex flex-col justify-between items-center">
                     <h3 className="text-center font-Fig text-yellow text-bold mt-2 md:text-2xl lg:text4xl">
                       {location.name}
                     </h3>
-                    <div className="w-full flex justify-between items-center px-2 lg:px-6">
+                    <div className="w-full flex justify-between items-center px-2 lg:px-6 mb-4">
                       <p className="text-yellow font-Fig flex items-center lg:text-2xl">
                         <FaLocationPin size={20} className="md:mr-4" />
                         <span className="text-white inline text-sm">
