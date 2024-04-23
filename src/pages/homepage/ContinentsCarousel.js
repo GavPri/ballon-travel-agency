@@ -53,9 +53,12 @@ const ContinentsCarousel = () => {
   return (
     <div className="max-w-[90vw] m-auto">
       {/* ------ Heading  */}
-      <h2 className="uppercase text-yellow font-M header-spacing text-xl text-center mb-4">
+      <h2 className="uppercase text-yellow font-M header-spacing text-xl text-center lg:text-left mb-4 lg:text-5xl">
         Disc<span className="stand-out">o</span>ver popula
-        <span className="stand-out">r</span> Destin
+        <span className="stand-out">
+          r<br className="hidden lg:flex"></br>
+        </span>{" "}
+        Destin
         <span className="stand-out">a</span>tions
       </h2>
       {/* ----- Continent Tabs */}
@@ -73,7 +76,7 @@ const ContinentsCarousel = () => {
         ))}
       </div>
       {/* ----- Continents image */}
-      <div className="w-[90vw] h-[40vh] mb-4">
+      <div className="w-[90vw] h-[60vh] mb-4">
         {selectedContinent && (
           <div className="h-full w-full">
             <div className="grid grid-cols-2 gap-2 w-full h-full ">
