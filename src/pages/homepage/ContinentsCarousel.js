@@ -79,12 +79,12 @@ const ContinentsCarousel = () => {
         </div>
       </div>
       {/* ----- Continent Tabs */}
-      <div className="flex flex-wrap lg:flex-nowrap gap-1 justify-center mb-4">
+      <div className="flex flex-wrap lg:flex-nowrap gap-1 lg:gap-3 justify-center lg:justify-start mb-4">
         {data.continents.map((continent, index) => (
           <div
             onClick={() => handleIndex(index)}
             key={index}
-            className={`transition-all duration-500 p-1 bg-[#013220] font-Fig basis-[30%] rounded-lg flex justify-center items-center mb-2 ${
+            className={`transition-all duration-500 p-1 lg:w-fit lg:p-2 bg-[#013220] font-Fig w-[30%] rounded-lg flex justify-center items-center mb-2 ${
               currentIndex === index ? `bg-yellow text-dark` : `text-white`
             }`}
           >
@@ -96,7 +96,7 @@ const ContinentsCarousel = () => {
       <div className="max-w-full h-[40vh] mb-4">
         {selectedContinent && (
           <div className="h-full w-full">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 w-full h-full ">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 w-full h-full lg:my-10">
               {data.locations[selectedContinent.slug].map((location, index) => (
                 <div
                   key={index}
