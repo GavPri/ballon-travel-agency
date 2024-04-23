@@ -93,10 +93,10 @@ const ContinentsCarousel = () => {
         ))}
       </div>
       {/* ----- Continents image */}
-      <div className="w-[90vw] h-[60vh] mb-4">
+      <div className="max-w-full h-[40vh] mb-4">
         {selectedContinent && (
           <div className="h-full w-full">
-            <div className="grid grid-cols-2 gap-2 w-full h-full ">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 w-full h-full ">
               {data.locations[selectedContinent.slug].map((location, index) => (
                 <div
                   key={index}
@@ -108,15 +108,17 @@ const ContinentsCarousel = () => {
                     className="w-full h-full object-cover absolute top-0 left-0 brightness-50"
                   />
                   <div className="w-full bg-gradient-to-b from-transparent to-dark mb-auto h-1/2 absolute bottom-0">
-                    <h3 className="text-center font-Fig text-yellow text-bold mt-2">
+                    <h3 className="text-center font-Fig text-yellow text-bold my-2 md:text-2xl lg:text4xl">
                       {location.name}
                     </h3>
-                    <div className="w-full flex justify-between items-center px-2">
-                      <p className="text-yellow font-Fig flex items-center">
-                        <FaLocationPin size={20} />
+                    <div className="w-full flex justify-between items-center px-2 lg:px-6">
+                      <p className="text-yellow font-Fig flex items-center lg:text-2xl">
+                        <FaLocationPin size={20} className="mr-4" />
                         <span className="text-white">{location.country}</span>
                       </p>
-                      <p className="font-Fig text-white">{location.price}</p>
+                      <p className="font-Fig text-white lg:text-2xl">
+                        {location.price}
+                      </p>
                     </div>
                   </div>
                 </div>
