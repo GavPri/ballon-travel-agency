@@ -53,14 +53,31 @@ const ContinentsCarousel = () => {
   return (
     <div className="max-w-[90vw] m-auto">
       {/* ------ Heading  */}
-      <h2 className="uppercase text-yellow font-M header-spacing text-xl text-center lg:text-left mb-4 lg:text-5xl">
-        Disc<span className="stand-out">o</span>ver popula
-        <span className="stand-out">
-          r<br className="hidden lg:flex"></br>
-        </span>{" "}
-        Destin
-        <span className="stand-out">a</span>tions
-      </h2>
+      <div className="lg:flex justify-between items-center my-8">
+        <h2 className="uppercase text-yellow font-M header-spacing text-xl text-center lg:text-left mb-4 lg:text-5xl">
+          Disc<span className="stand-out">o</span>ver popula
+          <span className="stand-out">
+            r<br className="hidden lg:flex"></br>
+          </span>{" "}
+          Destin
+          <span className="stand-out">a</span>tions
+        </h2>
+        {/* ----- Carousel Buttons */}
+        <div className="flex justify-evenly items-center lg:justify-end w-40 m-auto lg:m-0 ">
+          <div
+            className=" text-yellow rounded-full h-12 w-12 flex justify-center items-center"
+            onClick={() => handlePrevIndex(currentIndex, data)}
+          >
+            <IoIosArrowRoundBack size={40} />
+          </div>
+          <div
+            onClick={() => handleNextIndex(currentIndex, data)}
+            className="text-yellow rounded-full h-12 w-12 flex justify-center items-center"
+          >
+            <IoIosArrowRoundForward size={40} />
+          </div>
+        </div>
+      </div>
       {/* ----- Continent Tabs */}
       <div className="flex flex-wrap lg:flex-nowrap gap-1 justify-center mb-4">
         {data.continents.map((continent, index) => (
@@ -107,21 +124,6 @@ const ContinentsCarousel = () => {
             </div>
           </div>
         )}
-      </div>
-      {/* ----- Carousel Buttons */}
-      <div className="flex justify-evenly items-center">
-        <div
-          className="bg-yellow text-dark rounded-full h-12 w-12 flex justify-center items-center"
-          onClick={() => handlePrevIndex(currentIndex, data)}
-        >
-          <IoIosArrowRoundBack size={40} />
-        </div>
-        <div
-          onClick={() => handleNextIndex(currentIndex, data)}
-          className="bg-yellow text-dark rounded-full h-12 w-12 flex justify-center items-center"
-        >
-          <IoIosArrowRoundForward size={40} />
-        </div>
       </div>
     </div>
   );
