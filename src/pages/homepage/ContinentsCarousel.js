@@ -59,7 +59,7 @@ const ContinentsCarousel = () => {
         <span className="stand-out">a</span>tions
       </h2>
       {/* ----- Continent Tabs */}
-      <div className="flex flex-wrap gap-1 justify-center mb-4">
+      <div className="flex flex-wrap lg:flex-nowrap gap-1 justify-center mb-4">
         {data.continents.map((continent, index) => (
           <div
             onClick={() => handleIndex(index)}
